@@ -69,6 +69,7 @@ const getSummaryEmbed = async city => {
             .setThumbnail(
                 `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`
             )
+            .setTimestamp()
             .setFooter({
                 text: 'Data provided by OpenWeatherMap and API Ninjas',
             });
